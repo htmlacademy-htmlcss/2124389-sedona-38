@@ -3,11 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
-      <nav class="navigation"></nav>
-      <img class="header-logo" src="#" alt="Логотип CITY OF SEDONA">
+      <nav class="navigation">
+        <a class="navigation-logo" href="index.html">
+        <img class="header-logo" src="images/Logo/logo.svg" width="140" height="70" alt="Логотип Седона">
+        </a>
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="about.html">Главная</a>
@@ -23,11 +26,13 @@
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Поиск</span>
+              <img class="navigation-icon" src="images/Iconki/iconka-1.svg" width="18" height="18" alt="Поиск">
             </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <span class="visually-hidden">Сердце</span>
+              <span class="visually-hidden">Избранное</span>
+              <img class="navigation-icon" src="images/Iconki/ikonka-4.svg" width="18" height="17" alt="Избранное">
             </a>
           </li>
           <li class="navigation-item">
@@ -49,6 +54,7 @@
             <li class="advantages-item">
               <h3 class="advantages-title">Настоящий городок</h3>
               <p class="advantages-description>">Седона — не аттракцион для туристов, там течёт своя жизнь </p>
+              <img class="advantaget-photo" src="images/Filers/photo-1.jpg" width="800" height="385" alt="Фото">
             </li>
             <li class="advantages-item">
               <h3 class="advantages-title">Небольшая
@@ -58,8 +64,7 @@
             <li class="advantages-item">
               <h3 class="advantages-title">Красивая
                 дорога</h3>
-              <p class="advantages-description>">Красивая
-                дорога </p>
+              <p class="advantages-description>">Ехать в Седону из Лас-Вегаса совсем не скучно! </p>
             </li>
             <li class="advantages-item">
               <h3 class="advantages-title">Мало
@@ -70,12 +75,13 @@
               <h3 class="advantages-title">Там есть
                 мост дьявола</h3>
               <p class="advantages-description>">Да, по нему можно пройти! Если вы осмелитесь, разумеется </p>
+              <img class="advantages-photo" src="images/Filers/photo-2.jpg" width="800" height="385" alt="Фото">
             </li>
           </ul>
         </section>
+        <section class="positive-moment">
         <h2 class="after-logo">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
         <p class="after-info">Опытный персонал и качественное обслуживание!</p>
-        <section class="positive-moment">
           <h2 class="visually-hidden">Положительные моменты</h2>
           <ul class="positive-list">
            <li class="positive-item">
@@ -95,17 +101,19 @@
            </li>
           </ul>
         </section>
+        <section>
         <h2 class="after-logo">Заинтересовались?!</h2>
         <p class="after-info">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="button button-all" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+        <button class="button button-all" type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+        </section>
         <section class="newsletter">
-          <h2 class="mailing">Подпишитесь на рассылку</h2>
-          <p class="mailing-info">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <h2 class="newsletter-mailing">Подпишитесь на рассылку</h2>
+          <p class="newsletter-mailing-info">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label for="newsletter-email">Email</label>
           <input class="field" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
-          <button class="'button newsletter-button" type="submit">
-            <span class="visually-hidden">Подписаться</span>
+          <button class="button newsletter-button" type="submit">
+            <span class="button-subscribe">Подписаться</span>
           </button>
           </form>
         </section>
@@ -117,29 +125,28 @@
           <li class="footer-social-item">
             <a class="button" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Вконтакте</span>
+              <img class="button-social" src="images/Social network/Vector.svg" width="24.001" height="14" alt="Vkontakte">
             </a>
           </li>
           <li class="footer-social-item">
             <a class="button" href="https://t.me/htmlacademy ">
               <span class="visually-hidden">Telegram</span>
+              <img class="button-social" src="images/Social network/Vector (1).svg" width="18" height="16" alt="Telegram">
             </a>
           </li>
           <li class="footer-social-item">
             <a class="button" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">YouTube</span>
+              <img class="button-social" src="images/Social network/Vector (2).svg" width="22" height="17" alt="YouTube">
             </a>
           </li>
         </ul>
-        <section class="footer-contacts">
           <h2 class="visually-hidden">Контакты</h2>
           <a class="footer-contacts-address-phone" href="tel:+78128121212">+7-812-812-12-12</a>
-        </section>
-        <section class="footer-creator-logo">
           <h2 class="visually-hidden">Логотип создателя сайта</h2>
           <a href="https://htmlacademy.ru/">
-            <img class="footer-creator-logo" src="#" alt="Логотип HTML ACADEMY">
+            <img class="footer-creator-logo" src="images/logo/logo html akademii.svg" width="115" height="33" alt="Логотип HTML ACADEMY">
           </a>
-        </section>
       </footer>
 
   </body>
